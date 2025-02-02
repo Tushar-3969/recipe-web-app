@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma,sans-serif;
+}
+body{
+    background-color: #faf8f1; 
+}
+header nav{
+    background-color: #4d9fa7;
+    display: flex;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h1{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:white;
+    text-transform: uppercase;
+}
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+form #Search{
+    flex-grow: 1;
+    margin-right: 0.6rem;
+}
+form #Search ,.btn{
+   border: none;
+   font-size: 1.1rem;
+   padding: 0.7rem;
+   border-radius: 0.4rem;
+}
+form .btn{
+    background-color: #ff8c66; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0 0.2s ease-in-out;
+}
+form .btn:hover{
+    background-color: #e57356;
+}
+.recipe-container{
+    text-align: center;
+    margin-top: 1.3rem;
+}
+@media screen and (max-width:600px) {
+    header nav {
+        flex-direction: column; 
+        justify-content: center;
+    }
+    header nav form {
+        width: 80%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
