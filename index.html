@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recipe-web-app</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="sticky-nav">
             <h1>Recipe App</h1>
             <form>
                 <input type="text" placeholder="Search for recipes..." class="SearchBox" id="Search">
@@ -19,7 +20,13 @@
     <main>
         <section>
             <div class="recipe-container">
-                <h2>Search Your favourite recipes</h2>
+                <h2>Search Your favourite recipes...</h2>
+            </div>
+            <div class="recipe-detail">
+                <button type="button" class="recipe-close-btn">
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                </button>
+                <div class="recipedetails-content"></div>
             </div>
         </section>
     </main>
